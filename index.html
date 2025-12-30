@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Street Wear Catalog</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 8px;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 4px solid #fff;
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card .info h3 {
+      margin-bottom: 5px;
+    }
+
+    .card .info p {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .instagram {
+      background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.8rem;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>STREET WEAR</h1>
+    <p>Catálogo urbano · Minimal · Street Style</p>
+  </header>
+
+  <div class="container">
+
+    <h2>Camisas</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x500" alt="Camisa urbana">
+        <div class="info">
+          <h3>Camisa Negra</h3>
+          <p>Estilo street oversize</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x500" alt="Camisa blanca">
+        <div class="info">
+          <h3>Camisa Blanca</h3>
+          <p>Minimal urbana</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Pantalones</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x500" alt="Pantalón cargo">
+        <div class="info">
+          <h3>Pantalón Cargo</h3>
+          <p>Street wear</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Suetas</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x500" alt="Sueta">
+        <div class="info">
+          <h3>Sueta Oversize</h3>
+          <p>Urbana premium</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Zapatos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x500" alt="Zapatos street">
+        <div class="info">
+          <h3>Tenis Street</h3>
+          <p>Comodidad & estilo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a class="whatsapp" href="https://wa.me/50600000000" target="_blank">WhatsApp</a>
+      <a class="instagram" href="https://instagram.com/tuusuario" target="_blank">Instagram</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Street Wear Catalog
+  </footer>
+
+</body>
+</html>
+
